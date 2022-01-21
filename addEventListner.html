@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <h2 class="add">Hello and welcome to the Kapil sharma show</h2>
+    <h3 id="abc">SSSSSSSSSSSS</h3>
+    
+</head>
+<body>
+   <script>
+       document.body.addEventListener("click",doThis);
+
+
+function doThis(e){
+    e.preventDefault();
+alert("hello")
+}
+document.querySelector(".add").addEventListener("click",function(){
+alert("Good morning");
+});
+
+var btn=document.querySelector("#abc");
+btn.addEventListener("click", remove);
+function remove(){
+alert("Clicked");
+btn.removeEventListener("click",remove)
+}
+   </script> 
+</body>
+</html>

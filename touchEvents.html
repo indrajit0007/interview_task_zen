@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var img=document.querySelector("img");img.addEventListener("touchstart",function(){
+this.style.boxShadow="0px 0px 5px 1px #000";
+});
+img.addEventListener("touchmove",function(e){
+e.preventDefault();
+if (e.targetTouches.length == 1) {
+var touch = e.targetTouches[0];
+// Place element where the finger is
+obj.style.left = (touch.clientX-obj.clientLeft) +'px';
+obj.style.top = (touch.clientY-obj.clientTop-350)+ 'px';
+// position of image should be relative in css
+});
+img.addEventListener("touchend",function(){
+this.style.boxShadow="0px 0px 5px 1pxtransparent";
+});
+    </script>
+</body>
+</html>
