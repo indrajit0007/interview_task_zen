@@ -6,7 +6,8 @@ function Display1()
     const lname=useContext(lastName);
     return (
         <div>
- my name {fname} {lname}
+ 
+ My name {fname} {lname}
         </div>
     )
 }
